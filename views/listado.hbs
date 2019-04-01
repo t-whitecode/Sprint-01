@@ -1,0 +1,42 @@
+{{>header}}
+
+<p>
+	A continuación se listan los Cursos Disponibles.
+</p>
+
+<p>
+    {{{listado4}}}
+</p>
+<div>Señor usuario por favor ingese el id del curso que desea obtener más información.</div><br>
+
+<div id="Mostrarmas">
+<form action="/mostrarmas" method="post">
+
+    <table border="1">
+        <th>Id del curso</th>
+        <tr>
+            <td><input required= "true" type="number" name="id"></td>
+            <td><button>Más información</button></td>
+        </tr>
+    </table>
+
+</form>
+</div>
+<div>Señor usuario por favor ingese el id del curso al que desea inscribirse.</div><br>
+
+<div id="inscribir">
+<form action="/inscribir" method="post">
+
+    <table border="1">
+        <th>Id del curso</th>
+        <th>Reingrese su cédula</th>
+        <tr>
+            <td><input required= "true" type="number" name="id"></td>
+            <td><input required= "true" type="number" name="cedula"></td>
+            <td><button>Inscribir</button></td>
+        </tr>
+    </table>
+
+</form>
+</div>
+{{>footer}}

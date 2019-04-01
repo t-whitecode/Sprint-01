@@ -1,0 +1,25 @@
+{{>header}}
+
+
+<h1>
+	{{{listado5 usuario.cedula}}}
+</h1>
+
+<div>Señor usuario por favor ingese el id del curso que desea eliminar</div><br>
+<div id= "EliminarC" class= "tabcontent">    
+    <div class = "container">
+        <form action="/eliminarC" method="post">
+            <div class="form-label-group">
+                <input type="number" name="cedula" class="form-control" placeholder="Por favor reingrese su cedula" required autofocus>
+                <label for="cedula"></label>
+            </div>
+            <div class="form-label-group">
+                <input type="number" name="id" class="form-control" placeholder="Ingrese el id del curso." required autofocus>
+                <label for="id"></label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Eliminar</button>
+            <hr class="my-4">
+        </form>
+    </div>
+</div>
+{{>footer}}

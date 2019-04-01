@@ -1,0 +1,62 @@
+{{>header}}
+
+
+	<h1>
+		{{ingresar cedula}}
+	</h1>
+
+  
+    <div class = "container">
+        <div class="tab">
+            <button class="tablinks" onclick="openPropiedad(event, 'Alumno')">Alumno</button>
+            <button class="tablinks" onclick="openPropiedad(event, 'Profesor')">Profesor</button>
+        </div>
+    </div>
+	
+    <div id= "Alumno" class= "tabcontent">    
+        <div class = "container">
+            <form action="/alum" method="post">
+				<div class="form-label-group">
+					<input type="number" name="cedula" class="form-control" placeholder="Por favor Reingrese su cedula para verificar si es estudiante" required autofocus>
+					<label for="cedula"></label>
+				</div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <div id= "Profesor" class= "tabcontent">    
+        <div class = "container">
+            <form action="/prof" method="post">
+                <div class="form-label-group">
+                    <input type="number" name="cedula" class="form-control" placeholder="Reingrese su cedula por favor" required autofocus>
+                    <label for="cedula"></label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+                <hr class="my-4">
+            </form>
+        </div>
+    </div>
+    <script>
+        function openPropiedad(evt, propiedad) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+        
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+        
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(propiedad).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+  
+    </script>
+{{>footer}}

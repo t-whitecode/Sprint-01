@@ -1,0 +1,64 @@
+{{>header}}
+    <div class="container">
+        <div id= "Ingresar" class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ingreso</h5>
+                        <form action="/ingreso" method="post" >
+                            <div class="form-label-group">
+                                <input type="number" name="ced" class="form-control" placeholder="Ingrese su Cédula" required autofocus>
+                                <label for="ced"></label>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Recordarme</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+                            <hr class="my-4">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class= "container">
+        <div id= "Registrar" class= "row">
+            <div class = "col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class= "card card-signin my-5">
+                    <div class= "card-body">
+                        <h5 class= "card-title text-center">Registro</h5>     
+                        <form action="/registro" method="post">
+                            <div class="form-label-group">
+                                <input type="text" name="nombre" class="form-control" placeholder="Ingrese su Nombre" required autofocus>
+                                <label for="nombre"></label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="number" name="documento" class="form-control" placeholder="Ingrese su Cédula" required autofocus>
+                                <label for="documento"></label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" name="correo" class="form-control" placeholder="Ingrese su e-mail" required autofocus>
+                                <label for="correo"></label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="number" name="telefono" class="form-control" placeholder="Ingrese su Teléfono" required autofocus>
+                                <label for="telefono"></label>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" name="rol" class="form-control" placeholder="Rol" value = "aspirante" required autofocus>
+                                <label for="rol"></label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrar</button>
+                            <hr class="my-4">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{>footer}}

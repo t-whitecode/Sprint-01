@@ -1,0 +1,23 @@
+{
+  "name": "sprint",
+  "version": "1.0.2",
+  "description": "Team",
+  "main": "datos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "T-WhiteCode",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "export": "^0.1.337",
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.7",
+    "server": "^1.0.18",
+    "yargs": "^13.2.2"
+  }
+}

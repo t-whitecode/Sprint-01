@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sprint</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+    <h1>Registro</h1>
+    </header>
+    
+    <p>
+    Bienvenido a la pagina
+    </p>
+    
+    
+    
+    <footer>
+    <p>Todos los derechos reservados</p>
+    <p>Firma:T-WhiteCode</p>
+    </footer>
+</body>
+</html>
